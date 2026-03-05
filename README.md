@@ -1,20 +1,40 @@
-# Breast Cancer Prediction using Machine Learning
+BREAST CANCER PREDICTION USING MACHINE LEARNING
 
-This project predicts whether a tumor is malignant or benign using Machine Learning.
+## Project Overview
+This project predicts whether a tumor is **malignant or benign** using Machine Learning.
 
-Dataset:
+The model is trained on the **Breast Cancer Wisconsin dataset** available in Scikit-learn.
+
+
+
+## Dataset
 Breast Cancer Wisconsin dataset from Scikit-learn.
 
-Algorithm Used:
+
+
+## Algorithm Used
 Logistic Regression
 
-Accuracy:
-95%
 
-Tools & Libraries:
-Python
-Scikit-learn
-NumPy
-Pandas
-Matplotlib
-Seaborn
+
+## Model Accuracy
+95.6%
+
+
+
+## Tools & Libraries
+- Python
+- Scikit-learn
+- NumPy
+- Pandas
+- Matplotlib
+- Seaborn
+
+
+
+## Project Structure
+
+Breast_Cancer_Prediction  
+│  
+├── breastcancer.py  
+└── README.md
