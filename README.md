@@ -1,76 +1,98 @@
-BREAST CANCER PREDICTION USING MACHINE LEARNING
+# Breast Cancer Prediction Using Machine Learning and Deep Learning
 
 ## Project Overview
 
-This project predicts whether a tumor is **malignant (cancerous)** or **benign (non-cancerous)** using Machine Learning.
-The model is trained on the **Breast Cancer Wisconsin dataset** available in Scikit-learn.
+This project predicts whether a breast tumor is **malignant (cancerous)** or **benign (non-cancerous)** using the Breast Cancer Wisconsin dataset available in Scikit-learn.
 
+The project initially used a traditional Machine Learning approach with **Logistic Regression**. It has now been enhanced by adding a **Deep Learning Artificial Neural Network (ANN)** model.
 
-
-## Dataset
-
-The dataset used is the **Breast Cancer Wisconsin dataset** provided by the Scikit-learn library.
-It contains medical measurements of cell nuclei from breast cancer biopsies.
-
-**Dataset details**
-
-* Total samples: 569
-* Features: 30
-* Target classes:
-
-  * Malignant
-  * Benign
-
-
-## Algorithm Used
-
-The Machine Learning algorithm used in this project is:
-
-* Logistic Regression
-
-This algorithm is commonly used for **binary classification problems**.
-
-
-## Model Accuracy
-
-The trained model achieved an accuracy of approximately:
-
-**95.6%**
-
-
-## Tools and Libraries
-
-The following tools and Python libraries were used:
-
-* Python
-* Scikit-learn
-* NumPy
-* Pandas
-* Matplotlib
-* Seaborn
-
-
-
-## Project Structure
-
-Breast_Cancer_Prediction
-│
-├── breast_cancer_prediction.py
-├── confusion_matrix.png
-└── README.md
-
-
-## Model Output
-
-### Confusion Matrix
-
-![Confusion Matrix](confusion_matrix.png)
-
-The confusion matrix shows how well the model classified malignant and benign tumors.
+Both models are evaluated and compared using multiple performance metrics.
 
 ---
 
-## Conclusion
+## Objectives
 
-The Machine Learning model successfully predicts whether a tumor is malignant or benign with high accuracy.
-This project demonstrates how Machine Learning can assist in **medical diagnosis and decision support systems**.
+- Predict whether a breast tumor is malignant or benign.
+- Apply data preprocessing and feature scaling.
+- Implement a traditional Machine Learning model.
+- Implement a Deep Learning Artificial Neural Network.
+- Compare the performance of ML and DL models.
+- Evaluate the models using accuracy, precision, recall, F1-score and ROC-AUC.
+- Visualize model performance using graphs and a confusion matrix.
+
+---
+
+## Dataset
+
+The project uses the **Breast Cancer Wisconsin dataset** provided by Scikit-learn.
+
+### Dataset Details
+
+- Number of samples: **569**
+- Number of features: **30**
+- Classification type: **Binary Classification**
+- Classes:
+  - Malignant
+  - Benign
+
+The features describe characteristics of cell nuclei obtained from breast tissue measurements.
+
+---
+
+## Technologies Used
+
+- Python
+- NumPy
+- Pandas
+- Scikit-learn
+- TensorFlow
+- Keras
+- Matplotlib
+- Seaborn
+
+---
+
+## Machine Learning Model
+
+The original project uses:
+
+### Logistic Regression
+
+Logistic Regression is used as the baseline Machine Learning model for binary classification.
+
+The model achieved:
+
+**Accuracy: 98.25%**
+
+---
+
+## Deep Learning Model
+
+The upgraded project uses an **Artificial Neural Network (ANN)** implemented using TensorFlow and Keras.
+
+### ANN Architecture
+
+```text
+Input Layer
+    ↓
+Dense Layer - 64 neurons
+    ↓
+ReLU Activation
+    ↓
+Dropout - 30%
+    ↓
+Dense Layer - 32 neurons
+    ↓
+ReLU Activation
+    ↓
+Dropout - 20%
+    ↓
+Dense Layer - 16 neurons
+    ↓
+ReLU Activation
+    ↓
+Output Layer - 1 neuron
+    ↓
+Sigmoid Activation
+    ↓
+Malignant / Benign
